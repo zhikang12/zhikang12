@@ -30,3 +30,13 @@ Push to GitHub and enable GitHub Pages (Settings > Pages > main branch).
 - Google Fonts (Inter + Playfair Display)
 - SVG icons (no external dependencies)
 - Fully responsive design
+
+
+
+https://zhikang12.github.io/zhikang12/
+
+确保你已在仓库中开启了 GitHub Pages：
+1. 进入 https://github.com/zhikang12/zhikang12 → Settings → Pages
+2. Source 选择 Deploy from a branch
+3. Branch 选择 main，目录选 / (root)
+4. 点击 Save
