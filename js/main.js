@@ -1,111 +1,61 @@
-// Mobile Navigation Toggle
-document.addEventListener('DOMContentLoaded', function() {
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.nav');
+document.addEventListener("DOMContentLoaded", function () {
+  var toggle = document.querySelector(".nav-toggle");
+  var nav = document.querySelector(".nav");
 
-  if (navToggle) {
-    navToggle.addEventListener('click', function() {
-      nav.classList.toggle('open');
-      // Animate hamburger
-      this.classList.toggle('active');
-    });
-
-    // Close nav when clicking a link (mobile)
-    nav.querySelectorAll('a').forEach(function(link) {
-      link.addEventListener('click', function() {
-        nav.classList.remove('open');
-        navToggle.classList.remove('active');
-      });
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
     });
   }
 
-  // Scroll animations
-  const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  };
+  var current = window.location.pathname.split("/").pop() || "index.html";
+  var currentHash = window.location.hash;
+  if (!currentHash && current === "about.html") currentHash = "#mission";
+  if (!currentHash && current === "working-groups.html") currentHash = "#overview";
 
-  const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
+  document.querySelectorAll(".nav a").forEach(function (link) {
+    var parts = link.getAttribute("href").split("#");
+    var linkPage = parts[0].split("/").pop();
+    var linkHash = parts[1] ? "#" + parts[1] : "";
+    var pageMatches = linkPage === current;
+    var linkMatches = pageMatches && ((!linkHash && !window.location.hash) || linkHash === currentHash);
 
-  document.querySelectorAll('.pillar-card, .guideline-card, .team-card, .service-card, .research-item, .advocacy-card, .contact-card, .stat-item').forEach(function(el) {
-    observer.observe(el);
-  });
+    if (linkMatches) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+    }
 
-  // Smooth counter animation for stats
-  function animateCounters() {
-    document.querySelectorAll('.stat-number').forEach(function(counter) {
-      var target = parseInt(counter.getAttribute('data-count'));
-      if (!target) return;
-      var duration = 2000;
-      var start = 0;
-      var startTime = null;
-
-      function step(timestamp) {
-        if (!startTime) startTime = timestamp;
-        var progress = Math.min((timestamp - startTime) / duration, 1);
-        var eased = 1 - Math.pow(1 - progress, 3);
-        counter.textContent = Math.floor(eased * target).toLocaleString();
-        if (progress < 1) {
-          requestAnimationFrame(step);
-        } else {
-          counter.textContent = target.toLocaleString();
-          var suffix = counter.getAttribute('data-suffix');
-          if (suffix) counter.textContent += suffix;
-        }
-      }
-
-      requestAnimationFrame(step);
-    });
-  }
-
-  // Trigger counter animation when stats section is visible
-  var statsSection = document.querySelector('.stats');
-  if (statsSection) {
-    var statsObserver = new IntersectionObserver(function(entries) {
-      if (entries[0].isIntersecting) {
-        animateCounters();
-        statsObserver.unobserve(statsSection);
-      }
-    }, { threshold: 0.3 });
-    statsObserver.observe(statsSection);
-  }
-
-  // Active nav link highlight
-  var currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav a').forEach(function(link) {
-    var href = link.getAttribute('href').split('/').pop();
-    if (href === currentPage) {
-      link.classList.add('active');
+    if (pageMatches) {
+      var parentGroup = link.closest(".nav-group");
+      if (parentGroup) parentGroup.querySelector(".nav-parent").classList.add("active");
     }
   });
 
-  // Newsletter form handling
-  var newsletterForm = document.querySelector('.newsletter-form');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var input = this.querySelector('input');
-      if (input.value) {
-        alert('Thank you for subscribing! We will keep you updated.');
-        input.value = '';
+  document.querySelectorAll(".nav-parent").forEach(function (button) {
+    button.addEventListener("click", function () {
+      var group = button.closest(".nav-group");
+      var open = group.classList.toggle("open");
+      button.setAttribute("aria-expanded", String(open));
+    });
+  });
+
+  document.addEventListener("click", function (event) {
+    document.querySelectorAll(".nav-group.open").forEach(function (group) {
+      if (!group.contains(event.target)) {
+        group.classList.remove("open");
+        group.querySelector(".nav-parent").setAttribute("aria-expanded", "false");
       }
     });
-  }
+  });
 
-  // Contact form handling
-  var contactForm = document.querySelector('.contact-form form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your message! We will get back to you soon.');
-      this.reset();
+  document.querySelectorAll("form[data-demo-form]").forEach(function (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      var note = form.querySelector(".form-note");
+      if (note) {
+        note.textContent = "This form is a placeholder and is not connected to a submission service.";
+      }
     });
-  }
+  });
 });

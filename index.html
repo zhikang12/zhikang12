@@ -1,286 +1,144 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAGIC Evidence - Trustworthy Evidence for Better Healthcare</title>
-  <meta name="description" content="We are clinicians and EBM experts on a mission to improve patient care globally by enabling the creation, dissemination and implementation of trustworthy guidance.">
+  <title>Clinical Pharmacology EBM Group</title>
+  <meta name="description" content="Clinical Pharmacology EBM Group is a developing international academic initiative focused on evidence-based clinical pharmacology, GRADE methods, and trustworthy health guidance.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%A5%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="40" height="40" rx="8" fill="#1a5276"/>
-          <path d="M12 20h16M20 12v16M14 14l12 12M26 14L14 26" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        MAGIC Evidence
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="pages/platform.html">MAGICapp</a>
-        <a href="pages/consultancy.html">Consultancy</a>
-        <a href="pages/research.html">Research & Innovation</a>
-        <a href="pages/advocacy.html">Advocacy</a>
-        <a href="pages/about.html">About</a>
-        <a href="pages/contact.html">Contact</a>
-      </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Clinical Pharmacology EBM Group<small>Evidence-based medicine and clinical pharmacology</small></a>
+      <button class="nav-toggle" type="button" aria-expanded="false">Menu</button>
+      <nav class="nav" aria-label="Primary navigation">
+  <a href="index.html">Home</a>
+  <div class="nav-group"><button class="nav-parent" type="button" aria-expanded="false">About</button><div class="dropdown"><a href="pages/about.html#mission">Mission &amp; Vision</a><a href="pages/about.html#governance">Governance</a><a href="pages/about.html#steering-committee">Steering Committee</a><a href="pages/about.html#history">History</a><a href="pages/about.html#future-directions">Future Directions</a></div></div>
+  <a href="pages/methods.html">Methods</a>
+  <a href="pages/evidence-guidelines.html">Evidence &amp; Guidelines</a>
+  <a href="pages/publications.html">Publications</a>
+  <a href="pages/education.html">Education</a>
+  <div class="nav-group"><button class="nav-parent" type="button" aria-expanded="false">Working Groups</button><div class="dropdown"><a href="pages/working-groups.html#overview">Working Groups Overview</a><a href="pages/experts.html">Experts Directory</a><a href="pages/working-groups.html#therapeutic-drug-monitoring">Therapeutic Drug Monitoring WG</a><a href="pages/working-groups.html#pharmacogenomics">Pharmacogenomics WG</a><a href="pages/working-groups.html#drug-safety">Drug Safety WG</a><a href="pages/working-groups.html#real-world-evidence">Real-World Evidence WG</a><a href="pages/working-groups.html#guideline-methodology">Guideline Methodology WG</a></div></div>
+  <a href="pages/partners.html">Partners</a>
+  <a href="pages/contact.html">Contact</a>
+</nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Improving Patient Care Through Trustworthy Guidance</h1>
-        <p>We are clinicians and evidence-based medicine experts on a mission to improve patient care globally by enabling the creation, dissemination, and implementation of trustworthy clinical guidance.</p>
-        <div class="hero-buttons">
-          <a href="pages/platform.html" class="btn btn-primary">Explore MAGICapp</a>
-          <a href="pages/about.html" class="btn btn-outline">Learn More</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <svg viewBox="0 0 380 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Stylized medical/evidence ecosystem illustration -->
-          <circle cx="190" cy="160" r="100" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
-          <circle cx="190" cy="160" r="60" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"/>
-          <circle cx="190" cy="160" r="25" fill="rgba(255,255,255,0.15)"/>
-          <!-- Cross symbol -->
-          <rect x="183" y="145" width="14" height="30" rx="2" fill="rgba(255,255,255,0.9)"/>
-          <rect x="175" y="153" width="30" height="14" rx="2" fill="rgba(255,255,255,0.9)"/>
-          <!-- Orbiting nodes -->
-          <circle cx="190" cy="60" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-          <text x="190" y="65" text-anchor="middle" fill="white" font-size="14">R</text>
-          <circle cx="280" cy="130" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-          <text x="280" y="135" text-anchor="middle" fill="white" font-size="14">D</text>
-          <circle cx="260" cy="230" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-          <text x="260" y="235" text-anchor="middle" fill="white" font-size="14">I</text>
-          <circle cx="120" cy="230" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-          <text x="120" y="235" text-anchor="middle" fill="white" font-size="14">G</text>
-          <circle cx="100" cy="130" r="18" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-          <text x="100" y="135" text-anchor="middle" fill="white" font-size="14">E</text>
-          <!-- Connection lines -->
-          <line x1="190" y1="78" x2="190" y2="100" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-          <line x1="263" y1="137" x2="250" y2="145" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-          <line x1="248" y1="220" x2="235" y2="210" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-          <line x1="132" y1="220" x2="145" y2="210" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-          <line x1="117" y1="137" x2="130" y2="145" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats Section -->
-  <section class="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <div class="stat-number" data-count="5467">0</div>
-          <div class="stat-label">Public Guidelines</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-count="23233">0</div>
-          <div class="stat-label">Recommendations</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-count="567">0</div>
-          <div class="stat-label">Authors</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number" data-count="23000" data-suffix="+">0</div>
-          <div class="stat-label">Monthly Visitors</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pillars Section -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Our Approach</span>
-        <h2>How We Create Change</h2>
-        <p>Through four interconnected pillars, we work to transform how clinical guidance is created, shared, and put into practice.</p>
-      </div>
-      <div class="pillars-grid">
-        <div class="pillar-card">
-          <div class="pillar-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-            </svg>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">International academic initiative</span>
+          <h1>Advancing clinical pharmacology through evidence-based methods.</h1>
+          <p>Clinical Pharmacology EBM Group is being developed as a professional academic platform for evidence synthesis, GRADE-informed methods, and transparent clinical pharmacology guidance.</p>
+          <div class="button-row">
+            <a class="btn btn-light" href="pages/methods.html">Explore Methods</a>
+            <a class="btn btn-outline" href="pages/evidence-guidelines.html">Evidence & Guidelines</a>
           </div>
-          <h3>Research & Innovation</h3>
-          <p>We undertake cutting-edge research and innovation projects to improve how clinical guidance is developed, adapted, disseminated, and implemented across healthcare systems worldwide.</p>
         </div>
-        <div class="pillar-card">
-          <div class="pillar-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
-          </div>
-          <h3>MAGICapp Platform</h3>
-          <p>We build our research innovations into the MAGICapp digital guideline platform, enabling organizations to author, publish, and update trustworthy guidelines efficiently.</p>
-        </div>
-        <div class="pillar-card">
-          <div class="pillar-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
-            </svg>
-          </div>
-          <h3>Organization Support</h3>
-          <p>We equip healthcare organizations with expert consultancy, methodological guidance, and training to create and maintain high-quality, trustworthy clinical guidelines.</p>
-        </div>
-        <div class="pillar-card">
-          <div class="pillar-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-            </svg>
-          </div>
-          <h3>Implementation Support</h3>
-          <p>We create innovative dissemination and implementation products to support the uptake of guidance at the point of care, ensuring evidence reaches those who need it most.</p>
-        </div>
+        <aside class="hero-aside">
+          <span class="eyebrow">Editorial principle</span>
+          <p>This website uses placeholder sections until experts, partners, publications, projects, and guidelines are confirmed and can be cited accurately.</p>
+        </aside>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Partners Section -->
-  <section class="partners">
-    <div class="container">
-      <div class="partners-header">
-        <span class="section-tag">Trusted By</span>
-        <h2>Our Partners & Collaborators</h2>
-      </div>
-      <div class="partners-grid">
-        <div class="partner-logo">BMJ</div>
-        <div class="partner-logo">WHO</div>
-        <div class="partner-logo">Cochrane</div>
-        <div class="partner-logo">CDC</div>
-        <div class="partner-logo">NICE</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Recent Guidelines -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Featured</span>
-        <h2>Recent Guidelines</h2>
-        <p>Explore some of the latest trustworthy guidelines published on our platform by leading healthcare organizations.</p>
-      </div>
-      <div class="guidelines-grid">
-        <div class="guideline-card">
-          <div class="guideline-org">Stroke Foundation</div>
-          <h4>Acute Stroke Management Guidelines</h4>
-          <p>Comprehensive evidence-based recommendations for the acute management and early rehabilitation of stroke patients.</p>
-          <a href="#" class="guideline-link">View Guideline <span>&rarr;</span></a>
+    <section class="featured-content" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="featured-heading">
+          <h2 id="featured-title">Explore the Group</h2>
+          <p>Methods, evidence resources, collaboration, and learning</p>
         </div>
-        <div class="guideline-card">
-          <div class="guideline-org">WHO</div>
-          <h4>COVID-19 Prevention & Treatment</h4>
-          <p>Living guidelines providing up-to-date recommendations on therapeutics and prevention strategies for COVID-19.</p>
-          <a href="#" class="guideline-link">View Guideline <span>&rarr;</span></a>
-        </div>
-        <div class="guideline-card">
-          <div class="guideline-org">National Health Council</div>
-          <h4>Pregnancy & Prenatal Care</h4>
-          <p>Evidence-based guidance for routine prenatal care, screening, and management of pregnancy-related conditions.</p>
-          <a href="#" class="guideline-link">View Guideline <span>&rarr;</span></a>
-        </div>
-        <div class="guideline-card">
-          <div class="guideline-org">Gastroenterology Society</div>
-          <h4>Colonoscopy Quality Indicators</h4>
-          <p>Recommendations for quality assurance in colonoscopy procedures including detection rates and follow-up protocols.</p>
-          <a href="#" class="guideline-link">View Guideline <span>&rarr;</span></a>
-        </div>
-        <div class="guideline-card">
-          <div class="guideline-org">European Cardiology</div>
-          <h4>Heart Failure Management</h4>
-          <p>Comprehensive guidelines for the diagnosis and management of acute and chronic heart failure in adults.</p>
-          <a href="#" class="guideline-link">View Guideline <span>&rarr;</span></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Newsletter -->
-  <section class="newsletter">
-    <div class="container">
-      <h2>Stay Up to Date</h2>
-      <p>Subscribe to our newsletter for the latest updates on guidelines, research, and events.</p>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Enter your email address" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="logo" style="color:#fff;">
-            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="40" height="40" rx="8" fill="#2980b9"/>
-              <path d="M12 20h16M20 12v16M14 14l12 12M26 14L14 26" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-            MAGIC Evidence
+        <div class="featured-grid">
+          <a class="featured-item" href="pages/methods.html">
+            <span class="index">01 / METHODS</span>
+            <h3>Methods</h3>
+            <p>GRADE, evidence synthesis, Evidence-to-Decision frameworks, and transparent guideline development.</p>
+            <span class="text-link">Explore methods</span>
           </a>
-          <p>An independent, non-profit foundation dedicated to improving patient care through trustworthy evidence-based guidance.</p>
-          <div class="footer-social">
-            <a href="#" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
-            </a>
-            <a href="#" aria-label="Twitter">
-              <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div>
-          <h4>Platform</h4>
-          <ul class="footer-links">
-            <li><a href="pages/platform.html">MAGICapp</a></li>
-            <li><a href="#">Guidelines</a></li>
-            <li><a href="#">Support Center</a></li>
-            <li><a href="#">Free Trial</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Organization</h4>
-          <ul class="footer-links">
-            <li><a href="pages/about.html">About Us</a></li>
-            <li><a href="pages/research.html">Research</a></li>
-            <li><a href="pages/consultancy.html">Consultancy</a></li>
-            <li><a href="pages/advocacy.html">Advocacy</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Connect</h4>
-          <ul class="footer-links">
-            <li><a href="pages/contact.html">Contact Us</a></li>
-            <li><a href="#">Newsletter</a></li>
-            <li><a href="#">Annual Report</a></li>
-            <li><a href="#">Strategy Document</a></li>
-          </ul>
+          <a class="featured-item" href="pages/evidence-guidelines.html">
+            <span class="index">02 / EVIDENCE</span>
+            <h3>Evidence & Guidelines</h3>
+            <p>The planned library for verified evidence profiles, guidance, and decision-support resources.</p>
+            <span class="text-link">View evidence area</span>
+          </a>
+          <a class="featured-item" href="pages/working-groups.html">
+            <span class="index">03 / COLLABORATION</span>
+            <h3>Working Groups</h3>
+            <p>A framework for focused academic collaboration with clear scope, governance, and outputs.</p>
+            <span class="text-link">View working groups</span>
+          </a>
+          <a class="featured-item" href="pages/education.html">
+            <span class="index">04 / EDUCATION</span>
+            <h3>Education</h3>
+            <p>The future home for confirmed courses, workshops, seminars, and reviewed teaching resources.</p>
+            <span class="text-link">Explore education</span>
+          </a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>&copy; 2026 MAGIC Evidence Ecosystem Foundation. All rights reserved.</span>
-        <span>Oslo, Norway</span>
-      </div>
-    </div>
-  </footer>
+    </section>
 
+    <section class="section">
+      <div class="container split">
+        <div>
+          <span class="kicker">Scope</span>
+          <h2>A focused evidence platform for clinical pharmacology.</h2>
+          <p>The site is structured around the needs of researchers, clinicians, guideline developers, educators, and collaborators working at the intersection of medicines and evidence-based health care.</p>
+          <a class="text-link" href="pages/about.html">Read about the group</a>
+        </div>
+        <ul class="principles">
+          <li><strong>Clinical pharmacology</strong>Medicines, dosing, monitoring, safety, and variation in treatment response.</li>
+          <li><strong>Evidence-based methods</strong>Structured synthesis, certainty assessment, and transparent judgments.</li>
+          <li><strong>Verified academic outputs</strong>Publications and evidence products added only when attribution is confirmed.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container split">
+        <div>
+          <span class="kicker">Academic design model</span>
+          <h2>Inspired by leading evidence and guideline organizations.</h2>
+          <p>The information architecture draws from public-facing patterns used by groups such as the GRADE Working Group, Cochrane, the International Society for Evidence-Based Health Care, and MAGIC Evidence, while avoiding any implication of formal affiliation.</p>
+        </div>
+        <div class="placeholder">
+          <strong>Reference organization disclaimer</strong>
+          References are used for design and information-architecture inspiration only. Confirmed partnerships will be listed on the Partners page when available.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="kicker">Participation</span>
+          <h2>Planned sections for collaboration and training.</h2>
+        </div>
+        <div class="grid-4">
+          <article class="card"><h3>Education</h3><p>Placeholder area for future courses, seminars, workshops, and teaching materials.</p></article>
+          <article class="card"><h3>Working Groups</h3><p>Placeholder framework for topic-specific groups once scope and membership are confirmed.</p></article>
+          <article class="card"><h3>Experts</h3><p>Directory structure for verified profiles, affiliations, expertise, ORCID links, and disclosures.</p></article>
+          <article class="card"><h3>Partners</h3><p>Space for confirmed institutional collaborators and networks, with no unverified logos or claims.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a class="brand" href="index.html">Clinical Pharmacology EBM Group</a><p>A developing international academic website for evidence-based clinical pharmacology.</p></div>
+    <div><h3>About</h3><ul class="footer-links"><li><a href="pages/about.html#mission">Mission &amp; Vision</a></li><li><a href="pages/about.html#governance">Governance</a></li><li><a href="pages/about.html#steering-committee">Steering Committee</a></li><li><a href="pages/about.html#history">History</a></li><li><a href="pages/about.html#future-directions">Future Directions</a></li></ul></div>
+    <div><h3>Evidence &amp; Learning</h3><ul class="footer-links"><li><a href="pages/methods.html">Methods</a></li><li><a href="pages/evidence-guidelines.html">Evidence &amp; Guidelines</a></li><li><a href="pages/publications.html">Publications</a></li><li><a href="pages/education.html">Education</a></li></ul></div>
+    <div><h3>Working Groups</h3><ul class="footer-links"><li><a href="pages/working-groups.html#overview">Working Groups Overview</a></li><li><a href="pages/experts.html">Experts Directory</a></li><li><a href="pages/partners.html">Partners</a></li><li><a href="pages/contact.html">Contact</a></li></ul></div>
+  </div>
+  <div class="container footer-bottom">&copy; 2026 Clinical Pharmacology EBM Group.</div>
+</footer>
   <script src="js/main.js"></script>
 </body>
 </html>

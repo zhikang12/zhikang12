@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Local development server for MAGIC Evidence website."""
+"""Local development server for the Clinical Pharmacology EBM Group website."""
 
 import http.server
 import socketserver

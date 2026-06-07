@@ -1,42 +1,45 @@
-# MAGIC Evidence Website
+# Clinical Pharmacology EBM Group Website
 
-A static website for MAGIC Evidence Ecosystem Foundation, deployed on GitHub Pages.
+A static, GitHub Pages-compatible website for the Clinical Pharmacology EBM Group.
 
-## Pages
+## Navigation
 
-- **Home** - Mission overview, statistics, pillars, partners, featured guidelines
-- **MAGICapp** - Platform features and capabilities
-- **Consultancy** - Services for healthcare organizations
-- **Research & Innovation** - Current research projects
-- **Advocacy** - Evidence ecosystem vision
-- **About** - Team, history, and values
-- **Contact** - Support channels and contact form
+- Home
+- About
+  - Mission & Vision
+  - Governance
+  - Steering Committee
+  - History
+  - Future Directions
+- Methods
+- Evidence & Guidelines
+- Publications
+- Education
+- Working Groups
+  - Working Groups Overview
+  - Experts Directory
+  - Proposed topic-area working groups
+- Partners
+- Contact
+
+The site intentionally uses placeholder sections where experts, partners, publications, guidelines, governance details, and educational activities have not yet been confirmed.
+
+## Legacy URLs
+
+The previous `platform.html`, `consultancy.html`, `research.html`, and `advocacy.html` pages are retained as legacy notices so existing links do not immediately break.
 
 ## Local Development
 
 ```bash
-python3 start.py
+python start.py
 ```
 
-Opens `http://localhost:8311` in your browser. Press `Ctrl+C` to stop.
+Open `http://localhost:8311`. Press `Ctrl+C` to stop.
 
-## Deploy
+## Deployment
 
-Push to GitHub and enable GitHub Pages (Settings > Pages > main branch).
+The site uses plain HTML, CSS, and JavaScript with no build step. Push the repository to a GitHub Pages-enabled branch when it is ready to publish.
 
-## Tech Stack
+## Content Requirements
 
-- HTML / CSS / JavaScript (no frameworks)
-- Google Fonts (Inter + Playfair Display)
-- SVG icons (no external dependencies)
-- Fully responsive design
-
-
-
-https://zhikang12.github.io/zhikang12/
-
-确保你已在仓库中开启了 GitHub Pages：
-1. 进入 https://github.com/zhikang12/zhikang12 → Settings → Pages
-2. Source 选择 Deploy from a branch
-3. Branch 选择 main，目录选 / (root)
-4. 点击 Save
+Before launch, replace placeholders only with verified information. Do not add unconfirmed experts, partners, statistics, publications, guidelines, affiliations, or claims.
